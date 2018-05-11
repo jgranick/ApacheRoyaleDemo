@@ -17,6 +17,8 @@ package {
 			super ();
 			
 			trace ("HELLO FROM MAIN");
+			// var hi:Sprite = new Sprite ();
+			// trace (hi);
 			
 			// var loader:Loader = new Loader ();
 			// loader.contentLoaderInfo.addEventListener (Event.COMPLETE, loader_onComplete);
