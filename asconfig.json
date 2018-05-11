@@ -1,0 +1,18 @@
+{
+    "config": "js",
+    "type": "app",
+    "compilerOptions": {
+        "output": "dist",
+        "html-template": "template.html",
+        "source-path": [
+            "src"
+        ],
+        "targets": [
+            "js"
+        ]
+    },
+    "files":
+    [
+        "src/Main.as"
+    ]
+}
