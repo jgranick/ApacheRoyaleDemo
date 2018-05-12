@@ -3,8 +3,8 @@ package {
 	
 	// import openfl.display.Bitmap;
 	// import openfl.display.Loader;
-	// import openfl.display.Sprite;
-	// import openfl.display.Stage;
+	import openfl.display.Sprite;
+	import openfl.display.Stage;
 	// import openfl.events.Event;
 	// import openfl.net.URLRequest;
 	
@@ -16,9 +16,15 @@ package {
 			
 			super ();
 			
+			var stage:Stage = new Stage (550, 400, 0xFFFFFF);
+			document.body.appendChild (stage.element);
+			
 			trace ("HELLO FROM MAIN");
-			// var hi:Sprite = new Sprite ();
-			// trace (hi);
+			
+			var sprite:Sprite = new Sprite ();
+			sprite.graphics.beginFill (0xFF0000);
+			sprite.graphics.drawRect (0, 0, 100, 100);
+			stage.addChild (sprite);
 			
 			// var loader:Loader = new Loader ();
 			// loader.contentLoaderInfo.addEventListener (Event.COMPLETE, loader_onComplete);
@@ -40,21 +46,6 @@ package {
 		// 	bitmap.x = (stage.stageWidth - bitmap.width) / 2;
 		// 	bitmap.y = (stage.stageHeight - bitmap.height) / 2;
 		// 	addChild (bitmap);
-			
-		// }
-		
-		
-		
-		
-		// Entry point
-		
-		
-		
-		
-		// static function main () {
-			
-		// 	var stage = new Stage (550, 400, 0xFFFFFF, Main);
-		// 	js.Browser.document.body.appendChild (stage.element);
 			
 		// }
 		

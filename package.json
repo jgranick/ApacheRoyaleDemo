@@ -13,7 +13,7 @@
     "build:dev": "asconfigc --debug=true",
     "build:prod": "asconfigc --debug=false",
     "start": "npm run start:dev",
-    "start:dev": "cd dist && royale serve:debug",
-    "start:prod": "cd dist && royale serve:release"
+    "start:dev": "npm run build:dev && cd dist && royale serve:debug",
+    "start:prod": "npm run build:prod && cd dist && royale serve:release"
   }
 }
